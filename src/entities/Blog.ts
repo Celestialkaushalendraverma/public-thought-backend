@@ -3,20 +3,20 @@ import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn } from "typeor
 @Entity("blogs")
 export class Blog {
   @PrimaryGeneratedColumn('uuid')
-  id: number;
+  id!: number;
 
   @Column("varchar") // Explicit column type
-  title: string;
+  title!: string;
 
   @Column("text") // Explicit column type
-  content: string;
+  content!: string;
 
   @Column("varchar") // Explicit column type
-  name: string;
+  name!: string;
 
   @Column("varchar") // Explicit column type
-  email: string;
+  email!: string;
 
   @CreateDateColumn({ type: 'timestamptz', default: () => 'CURRENT_TIMESTAMP' })
-  created_at: string;
+  created_at!: string;
 }
