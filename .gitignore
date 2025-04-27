@@ -1,0 +1,22 @@
+# Node modules (bahut heavy folder hota hai)
+node_modules/
+
+# Build output (agar TypeScript use kar rahe ho to)
+dist/
+
+# Environment files (secrets waale)
+.env
+.env.production
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+
+# VSCode settings (optional)
+.vscode/
